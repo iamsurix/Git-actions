@@ -11,7 +11,7 @@ name: PSScriptAnalyzer
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/1 * * * *'
 
 
 
@@ -22,5 +22,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run PSScriptAnalyzer
-        run: ./
+      - name: Run Script
+        run: ./statuschange.sh
