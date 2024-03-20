@@ -1,9 +1,9 @@
-$status = Get-Content -Path "data.txt"
+$status =: Get-Content -Path "data.txt"
 
-if($status -eq 'F'){
+if($status -eq 'F') then
   $status = 'S'
   $status | Set-Content -Path "data.txt"
   Write-Output "Status updated to $status"
-} else {
+ else then
   Write-Output "Status is already $status. No change needed."
-}
+
