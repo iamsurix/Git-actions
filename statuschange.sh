@@ -1,7 +1,7 @@
 status=$(<data.txt)
 
 if [ "$status" = F ]; then
-  status='S'
+  status= S
   echo "$status" > data.txt
   echo "Status updated to $status"
 else
